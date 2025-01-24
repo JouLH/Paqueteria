@@ -264,3 +264,119 @@ span{
     transition: all 0.3s ease;
 
 }
+
+
+
+
+
+/* Para pantallas menores a 1200px (tablets grandes o laptops pequeñas) */
+@media (max-width: 1200px) {
+    .principal {
+        grid-template-columns: 10% 80% 10%;
+    }
+
+    .cajitas {
+        gap: 40px;
+    }
+
+    .cajitas a img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .textoEmpresa h1 {
+        font-size: 1.8rem;
+    }
+
+    .textoEmpresa p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para pantallas menores a 768px (tablets pequeñas o teléfonos grandes) */
+@media (max-width: 768px) {
+    .principal {
+        grid-template-columns: 5% 90% 5%;
+        grid-template-areas:
+            "head head head"
+            "rastrea rastrea rastrea"
+            "menu2 menu2 menu2"
+            "info info info"
+            "pie pie pie";
+    }
+
+    .menuOpciones {
+        padding: 10px;
+    }
+
+    .cajitas {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cajitas a img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .parrafoServicios {
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    .textoEmpresa h1 {
+        font-size: 1.5rem;
+    }
+
+    .textoEmpresa p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Para pantallas menores a 576px (teléfonos pequeños) */
+@media (max-width: 576px) {
+    .rastrea {
+        height: 300px;
+        padding: 10px;
+    }
+
+    .formularioRastreo input {
+        width: 100%;
+    }
+
+    .formularioRastreo button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menuOpciones h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .cajitas {
+        gap: 15px;
+    }
+
+    .cajitas a img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .textoEmpresa h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .textoEmpresa p {
+        font-size: 0.7rem;
+    }
+
+    .piePagina {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .uno, .dos, .tres {
+        margin-bottom: 15px;
+    }
+}
