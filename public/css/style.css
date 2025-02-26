@@ -37,6 +37,7 @@ span{
 .principal{
     background-color: #f2f2f2;
     display: grid;
+    overflow-x: hidden;
     grid-template-columns: 15% 70% 15%;
     grid-template-areas: "head head head"
                           "rastrea rastrea rastrea"
