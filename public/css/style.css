@@ -28,6 +28,9 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+body {
+        overflow-x: hidden; /* Oculta la barra de scroll */
+}
 
 span{
     font-size: xx-large;
